@@ -60,7 +60,8 @@ table {
  }
 
 .header-back {
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 100px;
   display: inline-block;
@@ -73,12 +74,36 @@ table {
   float: right;
   margin-right: 3%;
   display: flex;
-  line-height: 100px;
+  line-height: 96px;
   font-size: 14px;
   text-decoration: none;
   z-index: 200;
   font-family: sans-serif;
   letter-spacing: 1px;
+}
+
+.header-back a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header-back a::after {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.header-back a:hover::after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
 }
 
 .contact {
@@ -93,6 +118,7 @@ table {
 
 .man-image {
   position: relative;
+  margin-top: 6%;
 }
 
 .man-image img {
@@ -104,20 +130,27 @@ table {
 }
 
 .work-title{
-  margin: 4% 0 4% 0;
+  margin: 4% auto 4% auto;
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 70px;
   display: flex;
   justify-content: center;
+  font-weight: 100;
 }
 
 .work-title-absolute{
   position: absolute;
   font-size: 50px;
-  color: #333333;
+  color:#333333;
   font-family: Futura, 'Century Gothic';
   font-stretch: condensed;
+  text-align: left;
+  font-weight: 100;
+}
+
+.work-title-absolute {
+  font-weight: 100;
 }
 
 .work-2 {
@@ -152,13 +185,12 @@ table {
 }
 
 .experience {
-  margin: 7% 0 7% 0;
+  margin: 7% auto 7% auto;
   position: relative;
   width: 100%;
-  height: 400px;
-  text-align: center;
   background-color: white;
-  padding: 4% 0 4% 0;
+  text-align: left;
+  padding: 5% 0 5% 0;
 }
 
 .experience-title h1{
@@ -166,24 +198,26 @@ table {
   color: #333333;
   font-family: Futura, 'Century Gothic';
   font-stretch: condensed;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+  width: 45%;
+  text-align: center;
 }
 
 .experience-title-2 {
   width: 45%;
-  height: 250px;
-  margin:0 auto;
+  margin:7% auto 0 auto;
   text-align: left;
 }
 
 .experience-title-2 h2 {
   font-size: 20px; 
-  line-height: 40px;
+  line-height: 30px;
   margin-bottom: 30px;
 }
 
 .experience-sentence {
   line-height: 1.5;
+  /* border: 1px black solid; */
 }
 
 .work {
@@ -251,6 +285,7 @@ table {
 
 .web-design-text a{
   text-decoration: none;
+  color: black;
 }
 
 .logo {
@@ -286,6 +321,7 @@ table {
 
 .logo-text-relative a{
   text-decoration: none;
+  color: black;
 }
 
 .graphic-design {
@@ -319,6 +355,7 @@ table {
 
 .graphic-design-text a{
   text-decoration: none;
+  color: black;
 }
 
 .art-direction {
@@ -345,6 +382,7 @@ table {
 
 .art-direction-text a{
   text-decoration: none;
+  color: black;
 }
 
 .box-group {
@@ -621,7 +659,7 @@ table {
 /* web design */
 .main-webdesign {
   position: relative;
-  margin-top: 100px;
+  margin-top: 17%;
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
@@ -649,7 +687,7 @@ table {
 /* logo */
 .main-logo {
   position: relative;
-  margin-top: 100px;
+  margin-top: 17%;
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
@@ -676,7 +714,7 @@ table {
 /* graphic design */
 .main-graphicdesign {
   position: relative;
-  margin-top: 100px;
+  margin-top: 17%;
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
@@ -704,8 +742,7 @@ table {
  .explanation {
    max-width: 70%;
    height: 170px;
-   margin: 0 auto 0 auto;
-   margin-top: 50px;
+   margin: 17% auto 0 auto;
    line-height: 1.5;
  }
 
