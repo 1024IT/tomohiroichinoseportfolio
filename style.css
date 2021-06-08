@@ -1,4 +1,3 @@
-@charset "UTF-8";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -86,6 +85,10 @@ table {
   position: relative;
   display: inline-block;
   text-decoration: none;
+}
+
+#menu-btn-check {
+  display: none;
 }
 
 .header-back a::after {
@@ -256,7 +259,6 @@ table {
   width: 30%;
   height: 300px;
   text-align: center;
-  float: left;
   background-color: white;
 }
 
@@ -270,6 +272,7 @@ table {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  vertical-align: bottom;
 }
 
 .web-design-text-relative {
@@ -290,7 +293,7 @@ table {
 
 .logo {
   float: left;
-  margin-left: 55px;
+  margin-left: 5%;
   width: 30%;
   height: 300px;
   /* text-align: center; */
@@ -307,6 +310,7 @@ table {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  vertical-align: bottom;
 }
 
 .logo-text-relative {
@@ -340,6 +344,7 @@ table {
 .graphic-design img {
   width: 100%;
   height: 300px;
+  vertical-align: bottom;
   object-fit: cover;
 }
 
@@ -367,6 +372,7 @@ table {
 .art-direction img {
   width: 100%;
   height: 300px;
+  vertical-align: bottom;
   object-fit: cover;
 }
 
@@ -423,11 +429,13 @@ table {
   margin-right: 4%;
 }
 
-.box2-image {
+.box2-image img{
   position: absolute;
-  top: 10px;
-  left: 10px;
   display: flex;
+  width: 25px;
+  height: 25px;
+  top: 12px;
+  left: 12px;
 }
 
 .box3 {
@@ -440,11 +448,13 @@ table {
   float: left;
 }
 
-.box3-image {
+.box3-image img{
   position: absolute;
-  top: 10px;
-  left: 10px;
   display: flex;
+  width: 25px;
+  height: 25px;
+  top: 12px;
+  left: 12px;
 }
 
 .profile {
@@ -463,6 +473,12 @@ table {
   font-size: 20px;
   font-weight: 500;
   margin: 5% 0 5% 0;
+  line-height: 1.5;
+}
+
+.profile-name-text h2 {
+  font-size: 600px;
+  background-color: red;
 }
 
 .profile-text {
@@ -493,7 +509,7 @@ table {
 /* contact */
 .title-text {
   font-size: 46px;
-  margin: 100px auto 0 auto;
+  margin: 171px auto 0 auto;
   max-width: 720px;
   font-family: Futura,'Century Gothic';
   font-weight: 30;
@@ -628,6 +644,7 @@ table {
   }
 }
 .Form-Btn {
+  border: none;
   border-radius: 6px;
   margin-top: 32px;
   margin-left: auto;
@@ -650,6 +667,7 @@ table {
     padding-bottom: 8px;
     width: 160px;
     font-size: 16px;
+    border: none;
   }
 }
 
@@ -663,7 +681,6 @@ table {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
-  height: 600px;
 }
 
 .title-text-webdesign {
@@ -718,7 +735,6 @@ table {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
-  height: 1010px;
 }
 
 .title-text-graphicdesign {
@@ -739,10 +755,36 @@ table {
 
 
 /* lady bird */
+.main-artdirection {
+  position: relative;
+  margin-top: 17%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  height: 1010px;
+}
+
+.title-text-artdirection {
+  font-size: 46px;
+  font-family: Futura, 'Century Gothic';
+  font-weight: 30;
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+  margin-left: 55px;
+}
+
+.title-subtext-artdirection {
+  font-size: 18px;
+  margin-bottom: 120px;
+  margin-left: 55px;
+}
+
+
+
  .explanation {
    max-width: 70%;
    height: 170px;
-   margin: 17% auto 0 auto;
+   margin: 5% auto 0 auto;
    line-height: 1.5;
  }
 
@@ -755,7 +797,7 @@ table {
   }
 
  .JIP-regulation-relative {
-   margin-top: 10%;
+   margin-top: 5%;
  }
 
  .JIP-regulation1 {
