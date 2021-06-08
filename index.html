@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Portfolio</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<link href="responsive.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -15,7 +16,12 @@
             <li class="header-back-text"><a href="logo.html">LOGO</a></li>
             <li class="header-back-text"><a href="web-design.html">WEB DESIGN</a></li>
             <li class="header-back-text"><a href="index.html">HOME</a></li>
-        </ul>
+
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      </div>
+      </ul>
     </header>
     <div class="main">
         <div class="facing-page">
@@ -35,7 +41,7 @@
           <li class="web-design">
             <div class="web-design-inside">
               <a href="web-design.html">
-              <img src="image/1975.png" alt="写真">
+              <img src="image/1975.png" alt="写真" style="vertical-align: bottom;">
               </a>
               <div class="web-design-text-relative">
               <p class="web-design-text">
@@ -98,8 +104,8 @@
           </div>
           <div class="experience-title-2">
             <h2>
-            2020/12 ～ 2021/03<br>
-            ジントル株式会社
+            ジントル株式会社<br>
+            2020/12 ～ 2021/03
             </h2>
             <div class="experience-sentence">
               <p>
@@ -113,7 +119,7 @@
         <div class="profile">
           <p class="profile-image"><img src="image/profile-picture.png" alt="写真" width="140" height="140"></p>
           <div class="profile-name">
-            <p class="profile-name-text"><b>市之瀬 朋大</b></p>
+            <p class="profile-name-text">市之瀬 朋大</p>
           </div>
           <p class="profile-text">明治大学 法学部 法律学科3年。<br>
             塾講師やライターインターンを経て、2020年12月からジントル株式会社のデザインインターンに参加。ウェブデザインやロゴデザインなど、広範囲のデザイン業務を担当。
@@ -125,14 +131,14 @@
       <div class="box2">
         <p class="box2-image">
           <a href="https://www.facebook.com/ichinose.tomohiro/">
-          <img src="image/box2-image.png" alt="写真" width="25" height="25">
+          <img src="image/box2-image.png" alt="写真">
           </a>
           </p>
       </div>
       <div class="box3">
         <p class="box3-image">
           <a href="https://www.instagram.com/ichinose_tomohiro/">
-          <img src="image/box3-image.png" alt="写真" width="25" height="25">
+          <img src="image/box3-image.png" alt="写真">
           </a>
           </p>
       </div>
