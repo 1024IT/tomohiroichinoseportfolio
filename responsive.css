@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  padding-top: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit; 
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////*/
+
+@media(max-width: 752px) {
+  .header-back a{
+    position: relative;
+    display: none;
+    z-index: 99;
+  }
+
+  .header-back {
+    height: 82px;
+  }
+
+  .menu-btn {
+    z-index: 100;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: white;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #4c4c4c;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+.facing-page {
+  height: 346px;
+}
+
+.man-image {
+  margin-top: 17%;
+  height: 326px;
+}
+
+.man-image img {
+  height: 326px;
+}
+
+.work-title {
+  height: 36px
+}
+
+.work-title-absolute h1 {
+  font-size: 20px;
+}
+
+.work {
+  height: 754px;
+}
+
+.web-design {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 12%;
+}
+
+.web-design img {
+  height: 161px;
+}
+
+.web-design-text {
+  font-size: 15px;
+}
+
+.logo {
+  width: 100%;
+  height: 60%;
+  margin: 0 auto 12% auto;
+}
+
+.logo img {
+  height: 161px;
+}
+
+.graphic-design {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 12%;
+}
+
+.graphic-design img {
+  height: 161px;
+}
+
+.work-2 {
+  height: 260px;
+}
+
+.art-direction {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 12%;
+}
+
+.art-direction img {
+  height: 161px;
+}
+
+.experience-title h1 {
+  font-size: 20px;
+}
+
+.experience-title-2 {
+  width: 76%;
+}
+
+.experience-title-2 h2 {
+  font-size: 15px
+} 
+
+.experience-sentence {
+  font-size: 15px;
+}
+
+.profile {
+  max-width: 63%;
+}
+
+.profile-name-text {
+  font-size: 15px;
+}
+
+.profile-text {
+  font-size: 15px;
+}
+
+.box2-image img {
+  width: 20px;
+  height: 20px;
+}
+
+.box3-image img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  font-size: 10px;
+}
+
+.box-group {
+  margin-top: 10%;
+  height: 65px;
+}
+
+.main-webdesign {
+  margin-top: 124px; 
+}
+
+.title-text-webdesign {
+  font-size: 20px;
+  margin-left: 21px;
+}
+
+.title-subtext-webdesign {
+  font-size: 11px;
+  margin-left: 21px;
+  margin-bottom: 49px;
+}
+
+.main-logo {
+  margin-top: 124px;
+  height: 799px; 
+}
+
+.title-text-logo {
+  font-size: 20px;
+  margin-left: 21px;
+}
+
+.title-subtext-logo {
+  font-size: 11px;
+  margin-left: 21px;
+  margin-bottom: 49px;
+}
+
+
+
+.main-graphicdesign {
+  margin-top: 124px; 
+}
+
+.title-text-graphicdesign {
+  font-size: 20px;
+  margin-left: 21px;
+}
+
+.title-subtext-graphicdesign {
+  font-size: 11px;
+  margin-left: 21px;
+  margin-bottom: 49px;
+}
+
+.main-artdirection {
+  margin-top: 124px;
+  height: 500px;
+}
+
+.title-text-artdirection {
+  font-size: 20px;
+  margin-left: 21px;
+}
+
+.title-subtext-artdirection {
+  font-size: 11px;
+  margin-left: 21px;
+  margin-bottom: 49px;
+}
+
+.explanation {
+  font-size: 15px;
+  margin-bottom: 28%;
+}
+
+.title-text {
+  max-width: 90%;
+  font-size: 20px;
+}
+
+}
