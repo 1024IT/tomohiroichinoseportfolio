@@ -47,8 +47,6 @@ table {
 }
 
 
-
-
 /*//////////////////////////////////////////////////////////////*/
 
 @media(max-width: 752px) {
@@ -96,6 +94,143 @@ table {
 #menu-btn-check {
   display: none;
 }
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #f8f9fa;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #333333;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+
+
+
+.burger-btn{
+  display: block;      
+  width: 39px;      
+  height: 39px;      
+  position: relative;      
+  z-index: 3;
+  border:none;    
+}    
+.bar{      
+  width: 20px;      
+  height: 1px;        
+  display: block;      
+  position: absolute;      
+  left: 50%;      
+  transform: translateX(-50%);      
+  background-color: black;    
+}    
+
+.bar_top{   
+  top: 10px;
+}
+.bar_mid{    
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar_bottom{
+  bottom: 10px;
+}
+
+.burger-btn.close .bar_top{      
+  transform: translate(-50%,10px) rotate(45deg);      
+  transition: transform .3s;    
+}    
+.burger-btn.close .bar_mid{      
+  opacity: 0;       
+  transition: opacity .3s;    
+}    
+.burger-btn.close .bar_bottom{      
+transform: translate(-50%,-8px) rotate(-45deg);      
+transition: transform .3s;    
+}
+
+
+
+
+
+.nav-wrapper{      
+  display: none;      
+  width: 100vw;      
+  height: 100vh;      
+  position: fixed;      
+  top: 0;      
+  left: 0;       
+  z-index: 2;
+}     
+.header-nav{        
+  width: 100%;        
+  height: 100%;        
+  background-color:#F4F4F4;        
+  z-index: 2;      
+}     
+
+.header-nav.nav-list{        
+  display: block;        
+  position: absolute;        
+  top: 50%;        
+  left: 50%;        
+  transform: translate(-50%,-50%);        
+  text-align: center;  
+  color: black;    
+  font-size: 100px;
+  z-index: 99;
+  background-color:red;
+}      
+.header-nav.nav-item{        
+  margin-right: 0;        
+  margin-bottom: 40px;      
+  color: black;
+  font-size: 500px;
+  z-index: 100;
+  background-color: red;
+}
+
+
+
+
+body.noscroll{
+  overflow: hidden;
+}
+
+
+
+
 
 .facing-page {
   height: 346px;
